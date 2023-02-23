@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .top-bar {
+        background-color: rgb(24, 23, 23);
+        color: white;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .top-bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .contact-link {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+      .contact-link img {
+        height: 15px;
+        width: 15px;
+        margin-right: 8px;
+      }
+      .contact-link:not(:last-child)::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        color: aliceblue;
+        background-color: aliceblue;
+        margin: 0 30px;
+      }
+      .contacts-block {
+        display: flex;
+        padding: 15px 0;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+      }
+      .social-link {
+        text-decoration: none;
+        border-right: 1px solid white;
+        display: flex;
+        padding: 0 15px;
+        align-items: center;
+        border-bottom: 4px solid white;
+      }
+      .social-link:first-child {
+        border-left: 1px solid white;
+      }
+      .socials-block {
+        display: flex;
+        align-items: center;
+      }
+      .socials-block > p {
+        margin-right: 30px;
+      }
+      .social-link img {
+        height: 50px;
+      }
+      .socials {
+        align-self: stretch;
+        display: flex;
+      }
+
+      .border-blue {
+        border-bottom-color: blue;
+      }
+      .border-lightblue {
+        border-bottom-color: lightskyblue;
+      }
+      .border-red {
+        border-bottom-color: red;
+      }
+      .border-orange {
+        border-bottom-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-wrapper">
+            <div class="contacts-block">
+              <a href="tel:+3706-2232-2225" class="contact-link">
+                <img
+                  src="../assets/assets/phone.svg"
+                  alt=""
+                />+3706-2232-2225</a
+              >
+
+              <a href="mailto:bearsthemes@gmail.com" class="contact-link"
+                ><img
+                  src="../assets/assets/send.svg"
+                  alt=""
+                />bearsthemes@gmail.com</a
+              >
+            </div>
+            <div>
+              <div class="socials-block">
+                <p>Stay connected</p>
+                <div class="socials">
+                  <a href="" class="social-link border-blue"
+                    ><img src="../assets/assets/fb.svg"" /></a
+                  >
+
+                  <a href="" class="social-link border-lightblue"
+                    ><img src="../assets/assets/fb.svg" alt=""
+                  /></a>
+
+                  <a href="#" class="social-link border-red"
+                    ><img src="../assets/assets/fb.svg" alt=""
+                  /></a>
+
+                  <a href="#" class="social-link border-orange"
+                    ><img src="../assets/assets/fb.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bottom-bar"><img src="../assets/assets/" alt="" /></div>
+      </div>
+    </header>
+  </body>
+</html>

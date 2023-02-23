@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(../assets/photo/miskas.jpg);
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .contact {
+        text-align: center;
+      }
+      form {
+        background-color: rgb(226, 226, 221);
+        text-align: left;
+        width: 50%;
+        padding: 30px;
+        margin: 30px 180px 60px;
+      }
+
+      div {
+        display: block;
+      }
+      hr {
+        border: 0.1px solid rgb(28, 27, 27);
+      }
+      input {
+        border: none;
+        background-color: rgb(226, 226, 221);
+        display: inline-block;
+        width: 100%;
+      }
+      textarea {
+        background-color: rgb(226, 226, 221);
+        text-decoration: underline;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+      button {
+        background-color: rgb(38, 35, 36);
+        color: aliceblue;
+        width: 27%;
+        padding: 4px;
+        margin-top: 10px;
+        font-size: 12px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visas">
+      <form class="box" action="">
+        <div class="contact"><h2>Contact Us!</h2></div>
+
+        <div>
+          <label id="name" for="name">Name:</label> <br />
+          <input
+            id="name"
+            placeholder="Petras"
+            type="text"
+            required
+            minlength="3"
+            maxlength="20"
+          />
+          <hr />
+        </div>
+        <div>
+          <label id="email" for="email">Email:</label> <br />
+          <input
+            id="email"
+            placeholder="petras@petras.lt"
+            type="email"
+            required
+          />
+          <hr />
+        </div>
+        <div>
+          <label id="number" for="">Reference number</label> <br />
+          <input id="number" type="number" placeholder="12213" />
+          <hr />
+        </div>
+        <div>
+          <label id="message" style="color: gray" for="message"
+            >Your message goes here...</label
+          >
+          <br />
+          <!-- procentai netinka cia -->
+          <textarea id="message" name="message" cols="53%" rows="1"></textarea>
+        </div>
+        <div><button id="submit">Send!</button></div>
+      </form>
+    </div>
+  </body>
+</html>

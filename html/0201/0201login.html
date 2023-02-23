@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./0201login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>LOGIN V4</title>
+  </head>
+  <body>
+    <main>
+      <div class="login-card">
+        <h1>Login</h1>
+        <form action="../0202/0202.html">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder=" Type your username"
+          />
+          <label for="password">Password </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Type your password"
+          />
+          <div class="password">
+            <a href="#">Forgot password?</a>
+          </div>
+          <!-- praskiri diva, laikai alt, uzvedi pelyte ant eilutes ir su rodiklyte visa eilute traukai aukstyn zemyn -->
+          <button type="submit">LOG IN</button>
+        </form>
+        <div class="hketuri">
+          <h4>Or Sign up Using</h4>
+        </div>
+        <div class="socials">
+          <a href="http://www.facebook.com">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+        </div>
+        <div class="hketuri">
+          <h4>Or Sign up Using</h4>
+          <!-- galima ir span cia det, nes neturi prasmes, bet yra inline. centruot ji reikia idedant i div'a -->
+          <div class="or-sign-up">
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

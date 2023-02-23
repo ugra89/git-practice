@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./0124.css" />
+    <title>pseudo</title>
+    <style>
+      button {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: lightcoral;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: red;
+        font-size: 2rem;
+      }
+      button:active {
+        color: aliceblue;
+      }
+      button:focus {
+        /* border: 2px solid black; */
+        outline: 2px solid black;
+      }
+      a:hover {
+        color: crimson;
+      }
+      a:visited {
+        color: red;
+      }
+      input:required {
+        border-color: darkslategrey;
+      }
+      input:read-only {
+        background-color: rgb(211, 219, 219);
+      }
+      input:read-only:focus {
+        outline: none;
+      }
+      input:checked {
+        width: 20px;
+        height: 20px;
+      }
+      /*pseudo selektoriai*/
+      li:not(:first-child) /*pasirenkam viska, tik ne pirma vaika*/
+      li:first-child {
+        background-color: aquamarine;
+      }
+      li:last-child {
+        text-decoration: line-through;
+        background-color: rgb(169, 194, 194);
+      }
+      li:nth-child(3) {
+        background-color: blueviolet;
+      }
+      /*kas antras. gali vietoj 2n but even. tik lyginiai tada. odd-nelyginiai*/
+      li:nth-child(2n) {
+        background-color: rgb(174, 22, 124);
+      }
+      li:nth-child(3n) {
+        background-color: green;
+      }
+      /* kas trecias nuo antro skaiciuojant. gali but ir su pliusu 2n+1. tada 32+1 skaiciuoja nuo pirmo kas trecia*/
+      li:nth-child(3n-1) {
+        background-color: yellow;
+      }
+      /* 2n - kas antras nuo galo */
+      li:nth-last-child(2) {
+        background-color: coral;
+      }
+      /* 2n - gali prisitaikyt paskutiniam elementui taikyta taisykle. pvz cia buvo perbraukimas kaip ul liste */
+      li:only-child {
+        font-size: 50px;
+        text-decoration: none;
+      }
+      p:first-of-type {
+        background-color: aquamarine;
+      }
+      p:last-of-type {
+        background-color: darkkhaki;
+      }
+      /*--------------Pseudo elementai--------------*/
+      p::first-letter {
+        font-size: 4rem;
+      }
+      p::first-line {
+        font-weight: bold;
+      }
+      h1::before {
+        background-color: blue;
+        content: '';
+        width: 100px;
+        height: 10px;
+        position: absolute;
+        //*butina nurodyti turini*/
+      }
+      h1::after {
+        content: ' ateik';
+        color: black;
+      }
+
+      h1 {
+        color: brown;
+      }
+      span {
+        font-size: 1.5rem;
+      }
+      /*
+    span:not(:first-child)::before{content:"//"} tarp visu tada deda //*/
+
+      span:not(:last-child)::before {
+        content: '//';
+      }
+    </style>
+  </head>
+  <body>
+    <!--Elementu busenos-->
+
+    <button>Click me</button>
+    <h1>Code Academy</h1>
+    <a href="https://google.com">Eiti i Google</a>
+    <input type="text" required />
+    <input type="text" readonly value="CodeAcademy" />
+    <input type="checkbox" checked disabled />
+
+    <!--Pseudo selektoriai-->
+    <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+      <li>sixth</li>
+    </ul>
+    <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+      <li>sixth</li>
+    </ul>
+    <ol>
+      <li>only child</li>
+    </ol>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint
+        quos, vitae a esse ut ab dignissimos dolores
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repellat
+        porro repellendus fugiat? Repellendus cum perferendis illo exercitat
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint
+        quos, vitae a esse ut ab dignissi.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint
+        quos, vitae a esse ut ab dignissi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repellat
+        porro repellendus fugiat? Repellendus ct!
+      </p>
+    </div>
+    <h1>before</h1>
+    <div>
+      <span>overview</span>
+      <span>speakers</span>
+      <span>kazkas</span>
+    </div>
+  </body>
+</html>

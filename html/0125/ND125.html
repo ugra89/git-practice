@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMA</title>
+    <style>
+    
+      .visas{
+        position: relative;
+       
+        margin-left: 50px;
+     padding-left: 10px;
+     padding-right: 20px;
+     padding-bottom: 30px;
+        width: 25%;
+        border: 2px solid #c4c2c2;
+        border-radius: 20px;
+      }
+      .input{
+        text-align: right;  ;
+      
+      }
+      .info{
+        text-align: left; 
+      }
+      fieldset{
+       display: inline-block;
+       width: 180px;
+      }
+      .sex{
+        text-align: left;
+      }
+      .input-card{
+text-align: center;
+      }
+      #password{width: 200px;margin-right: 2px;}
+      #email{width: 200px;margin-right: 2px;}
+      #name{width: 200px; margin-right: 2px;}
+      #cc_details_cc_expiration_date{width: 200px; margin-right: 2px;}
+      #card-number{width: 200px; margin-right: 2px;}
+      label{
+        font-weight:bolder;
+        font-size: smaller;
+      }
+      .number-right{text-align: right;}
+     .button{
+        text-align: center;
+      }
+      .h6{text-align: left;}
+      button{background-color: rgb(135, 173, 195);border:1px solid navy; border-radius: 16px;cursor: pointer;}
+      button:hover{background-color: rgb(56, 56, 176); color: aliceblue;}
+      h6{font-style: italic;display: inline-block; margin-top: 0;margin-left: 80px;width: 2000px;}
+   
+    </style>
+</head>
+<body>
+  <div class="visas">
+    <div class="info">
+    <H1>Payment form</H1>
+    <h5>Required fields are followed by*</h5>
+    <h3>Contact information</h3> 
+  </div> 
+  <div class="input">
+    
+        <fieldset class="sex"> 
+          <legend>Title</legend>
+          <form action="" method="post"> 
+            <input type="radio" name="lytis" value="Mister" id="radio" checked> 
+            <label for="radio">Mister</label> <br>
+
+<input type="radio" name="lytis" value="Miss" id="radio" > 
+<label for="radio">Miss</label>
+<br>  
+
+</fieldset>
+
+    <form action="" method="post">
+      <br><br>
+      <label for="name">Name:</label> 
+      <input type="text" name="vardas" id="name" required /> <br> <br>
+      <label for="name">E-mail:</label> 
+      <input type="email" name="elpastas" id="email" required/> <br><br>
+      <label for="password">Password</label>
+      <input type="password" name="slaptazodis" id="password"  required/>
+      <br />
+       </div> 
+       <div class="info"> 
+<h1>Payment information</h1>  </div>
+
+  <div class="input-card">
+    <form action="" method="post">
+
+      <label for="card-type">Card type:</label> 
+      <select name="Card-type" id="Card-type" required >
+        <option value="Visa">Visa</option>
+        <option value="Maestro">Maestro</option>
+        <option value="Mastercard">Mastercard</option>
+     
+      </select> <br>
+      <br>
+      <div class="number-right"> <label for="Card-number">Card number *</label> 
+        <input type="text" minlength="16" inputmode="numeric" maxlength="16" placeholder="0000 0000 0000 0000" name="Card-number" id="card-number" required/> <br><br>
+  
+        <label for="Expiration-date">Expiration-date *</label>
+        
+        <input autocomplete="cc-exp" class="string optional cc_expiration_date " type="tel" data-mmyy-format="" data-placeholder="MM / YY" placeholder="MM / YY" name="cc_details[cc_expiration_date]" id="cc_details_cc_expiration_date" fdprocessedid="qpiwud" required></div>
+     <div class="h6">  <h6>Formatted as mm/yy </h6></div>
+    
+      <br />
+  
+    </div>
+    <div class="button"><button>Validate the payment</button></div>
+
+    </form>
+</div>
+</body>
+</html>

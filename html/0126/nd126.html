@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+             body {
+               background-color: rgb(50, 78, 50);
+               text-align: center;
+               color: white;
+
+             }
+             div{margin-top:10px ;}
+             form{width:80% height:60% ;}
+             input{border: 2px solid gray;}
+             #required {
+               background-color: rgb(229, 75, 160);
+             }
+             input:read-only {
+               background-color: gray;
+             }
+             #age:out-of-range {
+               border: 2px solid red;
+             }
+             #age:in-range {
+               border: 2px solid green;
+             }
+          input:invalid{border-color:red;}
+          input:valid {border-color: green;}
+             button{background-color: green; color: white; border: 2px solid gray;margin-top: 10px;}
+             button:hover{background-color: darkgreen;}
+             input[type=checkbox]:checked + #last{
+        background-color:blue !important;
+
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2>
+        All fields are <span id="required">required</span> unless marked as
+        "optional"
+      </h2>
+
+      <div>
+        <h2>Your unique ID that you can't change</h2>
+        <input type="text" value="YBX0123" readonly />
+      </div>
+      <div><label for="email">Email:</label></div>
+      <input type="email" id="email" required />
+      <div><label for="password">Password</label></div>
+      <input type="password" id="password" required />
+      <div>
+        <label for="age">Age:</label>
+      </div>
+      <input type="number" min="18" max="65" id="age" required />
+      <div>
+        <label for="about">Tell us a little about yourself (optional):</label>
+      </div>
+      <input type="textarea" id="about" required />
+      <div>
+        <label>
+          <input type="checkbox" name="agree" />
+          <span id="last">
+            I have read and agree to the terms and conditions</span
+          >
+        </label>
+      </div>
+      <button>Register</button>
+    </form>
+  </body>
+</html>

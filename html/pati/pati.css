@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(213, 98, 26, 0.6);
+  background-image: url(./meditacija.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-decoration: overline;
+  background-color: blanchedalmond;
+}
+p {
+  font-size: 20px;
+  font-weight: 100;
+  color: aliceblue;
+}
+p.juoda {
+  color: black;
+  font-size: larger;
+  letter-spacing: 0.2cm;
+}
+ol#balta {
+  background-color: brown;
+}
+li {
+  font-weight: 80;
+  color: rgb(152, 197, 135);
+  font-style: italic;
+}
+h2 {
+  color: rgb(235, 226, 226);
+}
+a {
+  color: rgb(248, 243, 243);
+}
+p span {
+  color: black;
+  font-style: oblique;
+}

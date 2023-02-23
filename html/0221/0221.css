@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero {
+  background-color: royalblue;
+  min-height: 15rem;
+  padding: 16px;
+}
+.hero p {
+  color: rgb(232, 187, 187);
+}
+
+.about-us {
+  background-color: lightcoral;
+  padding: 16px;
+}
+
+nav {
+  background-color: #333;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin-right: 2rem;
+  height: 3rem;
+}
+nav ul li a {
+  color: rgb(232, 187, 187);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(8, 104, 8);
+}/*# sourceMappingURL=0221.css.map */

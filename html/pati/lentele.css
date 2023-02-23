@@ -1,0 +1,119 @@
+.tamsi {
+  background-color: rgb(10, 10, 33);
+  height: 19.2rem;
+}
+img {
+  height: 166px;
+  margin-top: 12px;
+  margin-left: 42%;
+}
+
+h1 {
+  color: white;
+}
+
+.geltona {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+nav {
+  background-color: rgb(225, 190, 14);
+  text-align: right;
+}
+.middle {
+  width: 60%;
+  margin-left: 20%;
+  height: 12rem;
+  margin-top: 0;
+}
+.go {
+  display: inline-block;
+  width: 160px;
+  background-color: rgb(210, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 20%;
+  border-style: solid;
+  margin-right: 43%;
+  margin-left: 43%;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 10px;
+}
+.go:hover {
+  text-decoration: underline;
+}
+.about {
+  border: 0;
+  display: inline-block;
+  background-color: rgb(225, 190, 14);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+.melyna {
+  background-color: rgb(10, 10, 90);
+  height: 22rem;
+}
+table {
+  color: white;
+  width: 60%;
+  border-collapse: collapse;
+  width: 60%;
+  height: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+caption {
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+}
+.ilgas {
+  text-align: right;
+  width: 66%;
+}
+th {
+  height: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border: 2px solid red;
+}
+td {
+  height: 30px;
+  border: 2px solid red;
+  text-align: center;
+}
+thead {
+}
+.contacts {
+  margin-left: 20%;
+  font-weight: bolder;
+}
+.bottom {
+  text-align: right;
+}
+.up {
+  border: none;
+  background-color: transparent;
+  color: blue;
+  font-size: 16px;
+  margin-right: 40%;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+h3 {
+  background-color: rgb(225, 190, 14);
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

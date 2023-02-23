@@ -1,0 +1,17 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+h1 {
+  color: blueviolet;
+  font-size: 80px;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.text-crimson {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 60px;
+}
+#my-spec {
+  color: darkblue;
+}

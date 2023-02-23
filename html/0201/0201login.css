@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+main {
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .login-card {
+  width: 500px;
+  background-color: white;
+
+  border-radius: 12px;
+  padding: 64px 32px 48px;
+}
+main .login-card h1 {
+  text-align: center;
+  margin-bottom: 64px;
+  font-weight: bold;
+  font-size: 36px;
+}
+input:focus {
+  outline: none;
+}
+main .login-card form input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  padding: 16px;
+  font-size: 16px;
+}
+main .login-card form label {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+main .login-card form input:first-of-type {
+  margin-bottom: 24px;
+}
+main .login-card form .password {
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 32px;
+}
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+a:hover {
+  color: purple;
+}
+main .login-card form button {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* pabandymui */
+h4 {
+  color: gray;
+  font-weight: lighter;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-size-adjust: 100%;
+}
+.fa:hover {
+  background-color: black;
+  transition: 1s;
+}
+.fa-facebook {
+  background-color: rgb(59, 89, 152);
+}
+.fa-twitter {
+  background-color: rgb(29, 161, 242);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+.fa-google {
+  background-color: rgb(234, 67, 53);
+}
+.hketuri {
+  text-align: center;
+  margin-top: 60px;
+}
+.or-sign-up {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+}

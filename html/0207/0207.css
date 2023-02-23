@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: lightpink;
+  min-height: 300px;
+  border: 3px solid lightblue;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: 100px 100px;
+     /* Grid naudoja start - end. Flexbox flex-start/ flex-end */
+        /* Lygiavimas isoreje */
+        justify-content: center;
+        align-content: center;
+        /* vaikam - horiztalus lygiavimas */
+        justify-items: end;
+        /* vaikam - vertikalus lygiavimas */
+        align-items: start;
+        /* strech yra default verte */
+        justify-items: stretch;
+        align-items: stretch;
+        
+ 
+  * min-max ir auto-fit/auto-fill(repeat) */        /* grid-template-columns: repeat(3, minmax(200px, 400px)); */
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+        
+}
+.grid-item {
+  background-color: rgb(84, 171, 171);
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .grid-item:first-child{
+    justify-self: center;
+    align-self: center;
+} */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    background-color: lightblue;
+    min-height: 300px;
+    border: 3px solid coral;
+    grid-template-areas: "header header nav" "sidebar content content" "footer footer footer";
+}
+.one{
+    grid-area: header;
+}
+.four{
+    grid-area: nav;
+}
+.three{grid-area: footer;}
+.two{
+    grid-area: content;
+}

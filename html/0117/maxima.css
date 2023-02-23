@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(230, 234, 237);
+}
+nav {
+  padding-bottom: 20px;
+}
+article {
+  padding-bottom: 20px;
+  page-break-after: auto;
+}
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+button {
+  border: 0cm;
+  font-weight: bold;
+}
+div {
+  padding-left: 250px;
+}
+header,
+main,
+footer {
+  background-color: white;
+  text-align: center;
+
+  margin: 20px 400px 20px 300px;
+}
+#vienas {
+  width: 700px;
+  height: 500px;
+}
+#map {
+  width: 700px;
+  height: 600px;
+}
+.sonas {
+  text-align: left;
+  padding: 200px 10;
+}
+li {
+  list-style: none;
+}

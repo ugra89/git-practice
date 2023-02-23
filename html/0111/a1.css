@@ -1,0 +1,39 @@
+body {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  color: black;
+  font-size: 24px;
+}
+#pirma {
+  color: dodgerblue;
+}
+.nuoroda {
+  color: rgb(23, 23, 227);
+  text-decoration: underline;
+}
+h1,
+h2,
+h3 p {
+  font-weight: bold;
+}
+h3 {
+  font-style: italic;
+}
+div {
+  height: 40px;
+  width: 400px;
+}
+#italy {
+  font-style: italic;
+}
+span {
+  color: green;
+  text-decoration: underline;
+}
+a {
+  color: green;
+  text-decoration: underline;
+}

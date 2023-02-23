@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+header {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.headeraction {
+  margin-left: 15px;
+  margin-right: 190px;
+  color: grey;
+}
+button {
+  border: none;
+  background-color: white;
+  margin-right: 4px;
+}
+.pirmas {
+  color: blue;
+}
+.zanras {
+  color: rgb(117, 113, 108);
+  margin: 0.4rem;
+}
+h2 {
+  margin: 0.4rem;
+}
+.inner {
+  padding: 0.75rem 0.75rem 2rem;
+}

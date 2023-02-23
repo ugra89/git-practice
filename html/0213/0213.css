@@ -1,0 +1,113 @@
+.cube-container {
+  border: 1px solid black;
+  height: 300px;
+  position: relative;
+}
+
+.cube {
+  height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  background-color: green;
+  animation: cube-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: rotate(30deg); */
+}
+@keyframes cube-animation {
+  0% {
+    background-color: yellow;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: orange;
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    background-color: red;
+    top: 200px;
+    left: 200px;
+    rotate: 40deg;
+  }
+  75% {
+    background-color: brown;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: yellow;
+    left: 0;
+    top: 0;
+  }
+}
+.tth {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  border: 2px double darkolivegreen;
+  position: relative;
+}
+.kazkas {
+  background-color: olivedrab;
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  inset: 15px;
+  animation-name: belekas;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes belekas {
+  0% {
+  }
+  25% {
+    background-color: tomato;
+    width: 70%;
+    height: 70%;
+    rotate: 0deg;
+  }
+  50% {
+    background-color: burlywood;
+    width: 50%;
+    height: 50%;
+    rotate: 0deg;
+  }
+  75% {
+    background-color: cadetblue;
+    rotate: 50deg;
+  }
+  100% {
+    background-color: darkblue;
+    rotate: 0deg;
+    height: 90%;
+    width: 90%;
+  }
+}
+button {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: olive;
+  transition: transform 250ms;
+  background-position: center;
+  background-size: cover;
+}
+button:hover {
+  color: whitesmoke;
+  border: 2px solid green;
+  transform: rotate(30deg);
+  padding: 70px 80px;
+  background-image: url(https://picsum.photos/100/70);
+  border-radius: 100%;
+}
+img {
+}

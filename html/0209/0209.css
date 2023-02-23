@@ -1,0 +1,47 @@
+.box {
+  height: 200px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:not(.three) {
+  margin-bottom: 12px;
+}
+
+/* arba not(last-child) jei daugiau pvz elementu ateity gali but ir vis tiek nenorim, kad po paskutinio butu kazkoks tarpas */
+.four {
+  display: none;
+}
+
+@media (min-width: 786px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 12px;
+  }
+
+  .one {
+    grid-column: span 3;
+  }
+  .box:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .four {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .one {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 100%;
+  }
+  .two {
+    grid-column: span 2;
+  }
+}

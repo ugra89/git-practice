@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMOS</title>
+    <style>
+      *:focus {
+        outline: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>1.</h4>
+    <form action="" method="post" novalidate>
+      <input
+        type="text"
+        name="vardas"
+        placeholder="enter your name"
+        autocomplete="off"
+      />
+      <input type="email" name="elpastas" />
+      <input type="password" name="slaptazodis" />
+
+      <input type="submit" />
+      <input type="reset" />
+      <button><h3>submit</h3></button>
+    </form>
+
+    <hr />
+
+    <h4>2.</h4>
+    <form action="" method="get">
+      <label for="name">Your name:</label> <br />
+      <input type="text" name="vardas" id="name" required />
+      <input type="email" name="elpastas"/ > <br />
+      <label for="password">Password</label> <br />
+      <input type="password" name="slaptazodis" id="password" disabled />
+      <br />
+      <input type="submit" />
+      <button>submit</button>
+    </form>
+
+    <hr />
+
+    <hr />
+
+    <h4>3.</h4>
+    <form action="" method="get"></form>
+    <fieldset>
+      <legend>general information</legend>
+      <label for="third-name">Your first-name</label> <br />
+      <input type="text" name="third-name" /> <br />
+
+      <label for="kitas-name">Your name:</label> <br />
+      <input type="text" name="vardas" id="kitas-name" />
+    </fieldset>
+    <fieldset>
+      <legend>namu adresas</legend>
+      <label for="shipping-adress">Adresas</label> <br />
+      <input
+        type="text"
+        name="third-name"
+        id="shipping-adress "
+        maxlength="6"
+      />
+      <br />
+
+      <label for="salis">Salis:</label> <br />
+      <input type="text" name="vardas" id="salis" value="lt" readonly />
+    </fieldset>
+
+    <br />
+    <button>submit</button>
+    <hr />
+    <h4>4.</h4>
+    <fieldset>
+      <legend>Miestas</legend>
+      <form action="" method="get"></form>
+      <label for="City-select">Pick your city</label> <br />
+      <select name="City" id="City-select" multiple>
+        <option value="vilnius">Vilnius</option>
+        <option value="salcininkai">Shalcininkai</option>
+      </select>
+    </fieldset>
+
+    <hr />
+    <h4>1.</h4>
+    <form action="" method="post">
+      <label for="number">Metai</label> <br />
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="-5"
+        max="5"
+        step="5"
+      />
+      <br />
+      <label for="date">Data</label> <br />
+      <input type="date" name="date" id="date" />
+      <br />
+      <label for="file">browse</label> <br />
+      <input type="file" name="file" id="file" multiple accept="image/png" />
+      <br />
+      <br />
+      <label for="radio1">apple</label> <br />
+      <input type="radio" name="radio1" id="radio1" value="apple" <br /> <br />
+
+      <label for="radio2">braske</label> <br />
+      <input
+        type="radio"
+        name="radio1"
+        id="radio2"
+        value="braske"
+        checked
+        <br
+      />
+      <br />
+
+      <label for="radio3">banana</label> <br />
+      <input
+        type="radio"
+        name="radio1"
+        id="radio3"
+        value="banana"
+        multiple
+        accept="image/png"
+      />
+      <button type="submit">Submi</button>
+      <br />
+    </form>
+  </body>
+</html>

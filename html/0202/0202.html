@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HOME</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .fonui {
+        background-color: tomato;
+      }
+      .heading {
+        margin: 32px 0;
+      }
+      section {
+        display: flex;
+        gap: 12px;
+      }
+      section img {
+        flex: 1;
+        /* arba turi buti flex-grow:1; ir flex-basis:0 */
+      }
+      section div {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fonui"><h1 class="heading">Recent photos</h1></div>
+    <div class="container">
+      <section>
+        <img src="https://picsum.photos/400/400" alt="" />
+        <div>
+          <h1>Heading 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            suscipit, incidunt alias commodi modi tenetur quasi debitis earum
+            vitae animi assumenda neque accusamus quisquam et. Amet
+            reprehenderit quas dolores similique?
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

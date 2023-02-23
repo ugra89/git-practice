@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header img {
+  height: 50px;
+}
+nav {
+  background-color: rgb(9, 90, 9);
+  margin: 15px 0px 0px 15px;
+  height: 30px;
+}
+section.pilka {
+  padding: 15px;
+  background: #eee;
+}
+.pilka h2 {
+  margin-top: 20px;
+}
+section.zalia {
+  background-color: rgb(185, 233, 185);
+  padding: 5px;
+}
+section img {
+  width: 100%;
+}
+button {
+  display: inline-block;
+  background-color: rgb(9, 90, 9);
+  color: aliceblue;
+  border: unset;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.butt {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  background-color: rgb(9, 90, 9);
+  color: aliceblue;
+  font-size: medium;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+p {
+  background-color: rgb(241, 245, 241);
+  color: black;
+}
+.antras {
+  background-color: rgb(185, 233, 185);
+}
